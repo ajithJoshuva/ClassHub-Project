@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Style for over all navbar */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  height: 4rem;
+  background-color: #5d9ec6;
+  border-radius: 5px;
+  box-shadow: 0px 14px 80px #5d9ec6;
+}
+
+.background {
+  background-size: cover;
+  /* margin-top: -70px; */
+  background-repeat: no-repeat;
+  background-image: url(https://img.freepik.com/premium-photo/back-school-concept-with-diary-stationery-around-with-copy-space_102583-3530.jpg?w=740);
+  height: 100vb;
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  width: 100%;
+
+}
+
+@media (max-width: 768px) {
+  .storke {
+    font-size: small;
+    display: inline-block;
+    justify-content: center;
+  }
+
+  .user-details {
+    font-size: small;
+  }
+
+
+  .homelink {
+    padding: 0 !important;
+    display: inline-block;
+    margin: 0;
+  }
+
+  nav ul li a {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .round-photo-frame {
+    width: auto;
+    height: auto;
+  }
+
+  .header {
+    justify-content: center;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline;
+  padding: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+nav ul li a:hover {
+  color: #f9a876;
+}
+
+
+.user-details {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-right: 3px;
+}
+
+.usertype {
+  margin: 0px;
+  font-size: small;
+}
+
+.logout {
+  background-color: #ffffff;
+  font-size: small;
+  margin-left: 10px;
+
+}
+
+.username {
+  margin: 0px;
+
+}
+
+.user-details img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+/* Style for dashboard */
+
+.dashbody {
+  height: 100vb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.discription {
+  position: relative;
+  align-items: center;
+  top: 200px;
+  left: 15%;
+  width: 70%;
+  height: 250px;
+  background-color: #d15c5cdb;
+  border-radius: 5px;
+  padding: 20px;
+  justify-content: center;
+  font-size: large;
+  font-weight: 350;
+  /* box-shadow: 0px 14px 80px 14px #d15c5c;
+  box-shadow: 0px 14px 100px 14px #d15c5c; */
+  box-shadow: #d15c5c 0px 6px 12px -2px, #d15c5c 0px 3px 7px -3px;
+  box-shadow: #d15c5c 0px 14px 28px, #d15c5c 0px 10px 10px;
+  box-shadow: #d15c5c 0px 30px 90px;
+  color: #ffc8a3;
+
+}
+
+
+.dis-heading {
+  font-size: large;
+  font-weight: 800;
+  color: #000000;
+}
+
+
+
+@media screen and (max-width: 991px) {
+  
+
+  .dashbody {
+    display: block;
+    /* grid-template-rows: 1fr 1fr; */
+  }
+
+   .discription{
+    top: 150px;
+  }
+
+ 
+}
+
+/* Room Buttons design */
+
+
+.room {
+  align-items: center;
+  background-color: #a074c9;
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  height: 54px;
+  justify-content: center;
+  letter-spacing: .4px;
+  max-width: 100%;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: relative;
+  top: 50%;
+}
+
+.room-div {
+  position: absolute;
+  top: 50%;
+}
+
+.room :active {
+  outline: 0;
+}
+
+.room :hover {
+  outline: 0;
+}
+
+.room span {
+  transition: all 200ms;
+}
+
+.room :hover span {
+  transform: scale(.9);
+  opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+  .room {
+    font-size: 15px;
+    height: 50px;
+  }
+
+  .room span {
+    line-height: 50px;
+  }
+
+  .room-div{
+    top: 70%;
+    left: 15%;
+  }
+}
+
+/*CreateRoom*/
+
+.crateroom-body {
+  background-size: cover;
+  /* margin-top: -70px; */
+  background-repeat: no-repeat;
+  background-image: url(https://img.freepik.com/premium-photo/indian-asian-school-kids-uniform-studying-hard-from-books-classroom_466689-95578.jpg?w=740);
+  height: 100vb;
+}
+
+.CreateRoom{  
+  height: 100vb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.RoomName{
+  position:relative;
+  top:40%;
+  left: 25%;
+  width: 250px;
+  height: 100px;
+}
+
+.content {
+  border-radius: 20px;
+  background-color:#d15c5c;
+  position: relative;
+  width: 500px;
+  top: 7%;
+  left: 10%;
+  height: 400px;
+  margin-top: 100px;
+  color: #ffffff;
+  text-align: justify;
+  padding: 25px;
+}
+
+.content-head {
+  text-align: center;
+}
+
+.invitecode {
+  border-radius: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #363636a9;
+  padding: 20px;
+  padding-left: 10px;
+}
+
+
+.roomlink {
+  text-decoration: none;
+  color: black;
+}
+
+.room {
+  margin: 5px;
+}
+
+
+.joinroom-body {
+  background-size: cover;
+  /* margin-top: -70px; */
+  background-repeat: no-repeat;
+  background-image: url(https://img.freepik.com/premium-photo/indian-asian-school-kids-uniform-studying-hard-from-books-classroom_466689-95578.jpg?w=740);
+  height: 100vb;
+}
+
+.JoinPara{
+  padding-top: 50px;
+}
+
+/* For homework */
+.homework-body {
+  background-size: cover;
+  /* margin-top: -70px; */
+  background-repeat: no-repeat;
+  background-image: url(https://img.freepik.com/premium-photo/indian-asian-school-kids-uniform-studying-hard-from-books-classroom_466689-95578.jpg?w=740);
+  height: 100vb;
+  font-family: "Poppins", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 50px;
+}
+
+.grid-item {
+  background-color: #d15c5c;
+  padding: 20px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #d15c5c60;
+  width: 200px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+
+}
+
+.app-container {
+  display: flex;
+
+}
+
+.nav-bar {
+  flex: 0 0 auto;
+  background-color:#a074c979;
+  padding: 15px;
+  margin-left: 30px;
+  border-radius: 10px;
+  width: 15%;
+  height: auto;
+}
+
+/* .scrollable-div {
+    flex: 1 1 auto;
+    overflow-y: auto; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.609);
+    margin: 0px 5px;
+    border-radius: 10px;
+   
+  } */
+
+.scrollable-div {
+  overflow-y: auto;
+  max-height: 425px;
+  padding: 20px;
+  background-color:#d15c5c60;
+  margin: 0px 5px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+
+.homework {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.right-list {
+  flex: 0 0 auto;
+  background-color: #a074c979;
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 20%;
+  height: auto;
+}
+
+.Post{
+  margin: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.homework-container {
+  /* background-color: #983eff; */
+  margin: 25px;
+}
+
+.box {
+  width: 100%;
+  margin: 0px;
+}
+
+.button-label {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: large;
+}
+
+.button-label:hover {
+  color: darkblue;
+}
+
+.name-dis {
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.subname {
+  width: 100%;
+  border-width: 2px;
+  border-color: #ff0000;
+  text-align: left;
+  font-size: small;
+  padding-left: 25px;
+  padding-top: 5px;
+}
+
+.subdis {
+  width: 100%;
+
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 5px;
+}
+
+.sub-date {
+  text-align: left;
+  font-size: 10px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+/* For homework view */
+.hwview-body {
+  background-size: cover;
+  /* margin-top: -70px; */
+  background-repeat: no-repeat;
+  background-image: url(https://img.freepik.com/premium-photo/indian-asian-school-kids-uniform-studying-hard-from-books-classroom_466689-95578.jpg?w=740);
+  height: 100vb;
+
+}
+
+.hw {
+  width: 30%;
+  padding: 10px;
+  text-align: left;
+  background-color: #ffffff;
+  margin-left: 25px;
+  border-radius: 10px;
+}
+
+.hwtitle {
+  background-color: #ffffff;
+}
+
+.hwdis {
+  background-color: #ffffff;
+}
+
+.tablefull {
+  background-color: #ffffff49;
+  border-radius: 10px;
+  margin: 10px;
+
+}
+
+.row {
+  color: #000000;
+  margin: 10px;
+
+}
+
+.user {
+  float: left;
+  width: 30%;
+
+}
+
+.work {
+  float: left;
+  width: 30%;
+}
+
+.view {
+  float: left;
+  width: 20%;
+}
+
+.checked{
+  float: left;
+  width: 10%;
+}
+
+.toggle {
+  float: left;
+  width: 10%;
+}
+
+.heading {
+  text-decoration: underline;
+  font-size: large;
+}

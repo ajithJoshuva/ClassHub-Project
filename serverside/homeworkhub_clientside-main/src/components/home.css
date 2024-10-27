@@ -1,0 +1,293 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap");
+
+
+/* Home page background */
+
+.homebody {
+  background-size: cover;
+  /* margin-top: -70px; */
+  background-repeat:repeat-x;
+  background-image: url(https://img.freepik.com/free-photo/international-day-literacy-concept-with-learning-tools_1150-24440.jpg?w=740&t=st=1711970959~exp=1711971559~hmac=61bdc28537d8e5bafe12d41a032e4071774e3aff216e33c2428c83e34889f0b1);
+  height: 100vb;
+}
+
+/* Navbar Styles */
+.navbar {
+  height: 4rem;
+  background-color: #5d9ec6;
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Signup Button Styles */
+.signup-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 30%;
+  height: auto;
+}
+
+/* Unordered List Styles */
+.unlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  width: 50%;
+}
+
+/* Anchor Link Styles */
+.alink {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Home Link Styles */
+.homelink {
+  position: relative;
+  list-style: none;
+  padding: 4px 0;
+}
+
+.homelink::after,
+.homelink::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.6s ease-in-out;
+}
+
+.homelink::after {
+  top: 0;
+  right: 0;
+  transform-origin: right;
+}
+
+.homelink::before {
+  left: 0;
+  bottom: 0;
+  transform-origin: left;
+}
+
+.homelink:hover::after,
+.homelink:hover::before {
+  width: 100%;
+}
+
+/* Slider Styles */
+.slider {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 50px; */
+}
+
+
+/* Arrow Styles */
+.right-arrow,
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.right-arrow {
+  right: 1px;
+}
+
+.left-arrow {
+  left: 1px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .slider {
+    height: auto;
+  }
+
+  .card {
+    height: auto;
+
+  }
+
+  .signup-btn {
+    height: 80%;
+    margin-right: 5px;
+    font-size: x-small;
+  }
+
+  .sign {
+    font-size: x-small;
+  }
+
+  .right-arrow,
+  .left-arrow {
+    font-size: 2rem;
+  }
+
+ 
+
+}
+
+
+
+
+/* Image Styles */
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  top: 20%;
+}
+
+.card {
+  max-width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  top: 50px;
+  display: inline-block;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+  filter: grayscale(5) brightness(0.5) ;  
+}
+
+.card:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+
+/*Image content*/
+
+.homecontent {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.2;
+  height: 100%;
+}
+
+
+.heading-line1 {
+  font-size: 20px; 
+  text-align: left;
+  font-weight: bold;
+  padding-left: 30px;
+  font-family: "Tiro Tamil", serif;
+  position: absolute;
+  top: 40%;
+}
+
+.heading-line2 {
+  font-size: 20px; 
+  text-align: left;
+  padding-left: 30px;
+  font-family: "Tiro Tamil", serif;
+  position: absolute;
+  top: 48%;
+}
+
+.slideContent{
+  margin: 10px;
+  position: relative;
+  position: absolute;
+  top: 53%;
+}
+
+
+.quote{
+  font-family: "Tiro Tamil", serif;
+  font-size:small; 
+  text-align: center;
+  left: 30%;
+  position: absolute;
+  bottom: 2.5%;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .homecontent {
+    width: 90%;
+  }
+  
+  .heading-line1, .heading-line2 {
+    font-size: 16px;
+    padding-left: 0;
+    top: 30%;
+    position: relative;
+  }
+  
+  .slideContent {
+    top: 45%;
+  }
+  .quote{
+    font-size: 10px;
+  }
+
+}
+
+.homecontent h2,
+.homecontent p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+  color: #ffcb3d;
+  font-weight: 300;
+}
+
+.homecontent h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+}
+
+.homecontent p {
+  font-size: 14px;
+  font-family: p;
+  line-height: 1.5;
+  color: #d1d1d1;
+  transform: translateY(50%);
+  font-family: "Poppins", sans-serif;
+}
+
+.card:hover .homecontent h2 {
+  scale: 1;
+  opacity: 1;
+}
+
+.card:hover .homecontent P {
+  opacity: 1;
+  transform: translateY(0);
+}
